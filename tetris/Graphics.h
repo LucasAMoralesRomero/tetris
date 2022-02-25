@@ -27,7 +27,7 @@ public:
 		SetConsoleCursorPosition(hCon, xyPos);
 	}
 		
-	void PintarLimites() {
+
 			
 		for(int i = 2; i < 78; i++)
 			{

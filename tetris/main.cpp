@@ -10,8 +10,9 @@ int main (int argc, char *argv[]) {
 	Graphics Gr;
 	Gr.OcultarCursor();
 	Gr.PintarLimites();
-	//Gr.Gotoxy(2,3);
-	//cout<<"hola";
+	Gr.Gotoxy(5,15);
+	cout<<"hola";
+	Gr.Gotoxy(1,36);
 	return 0;
 }
 
