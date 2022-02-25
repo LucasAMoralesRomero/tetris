@@ -8,8 +8,10 @@ using namespace std;
 
 int main (int argc, char *argv[]) {
 	Graphics Gr;
-	Gr.Gotoxy(2,3);
-	cout<<"hola";
+	Gr.OcultarCursor();
+	Gr.PintarLimites();
+	//Gr.Gotoxy(2,3);
+	//cout<<"hola";
 	return 0;
 }
 
