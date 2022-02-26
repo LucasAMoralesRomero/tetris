@@ -28,7 +28,7 @@ public:
 	}
 		
 
-			
+	void PintarLimites(){		
 		for(int i = 2; i < 78; i++)
 			{
 				//limite superior
