@@ -74,20 +74,22 @@ public:
 		return y;
 		}
 	
-		
+	char MatrizPieza[4][4]//pieza de A x B
+	{
+	{o,a,o,o,},
+	{o,a,o,o,},
+	{o,a,o,o,},
+	{o,a,o,o,}
+	};		
 		
 		
 private:
+		
 			int x;
 			int y;
 			char a = 'a';
 			char o = 32;
-			char MatrizPieza[4][4]//pieza de A x B
-			{
-				{o,a,o,o,},
-				{o,a,o,o,},
-				{o,a,o,o,},
-				{o,a,o,o,}
-			};	
+			
+		
 };
 #endif

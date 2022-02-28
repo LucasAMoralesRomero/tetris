@@ -6,6 +6,7 @@
 #include "Graphics.h"
 #include "Tablero.h"
 #include "Pieza.h"
+#include "L.h"
 
 
 using namespace std;
@@ -14,7 +15,7 @@ int main (int argc, char *argv[]) {
 	Graphics Gr;
 	Tablero Tab;
 	Gr.OcultarCursor();
-	Pieza Pi(2,2);
+	L Pi(2,2);
 	Tab.DibujarTablero();
 	Pi.DibujarPieza();
 	/*Gr.PintarLimites(); //por el momento no se implementara Graphics.PintarLimites(), se implementara en proxima version
