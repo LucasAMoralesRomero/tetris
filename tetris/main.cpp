@@ -6,24 +6,44 @@
 #include "Graphics.h"
 #include "Tablero.h"
 #include "Pieza.h"
+
+
 using namespace std;
 
 int main (int argc, char *argv[]) {
 	Graphics Gr;
 	Tablero Tab;
-	Pieza Pi;
 	Gr.OcultarCursor();
-	//Gr.PintarLimites(); //por el momento no se implementara Graphics.PintarLimites(), se implementara en proxima version
+	Pieza Pi(2,2);
+	Tab.DibujarTablero();
+	Pi.DibujarPieza();
+	/*Gr.PintarLimites(); //por el momento no se implementara Graphics.PintarLimites(), se implementara en proxima version
 	Gr.Gotoxy(5,15);
 	cout<<"hola";
 	Gr.Gotoxy(0,4);
 	Tab.DibujarTablero();
 	Gr.Gotoxy(0,5);
 	Pi.DibujarPieza();
-	//+Gr.Gotoxy(0,4);
+	+Gr.Gotoxy(0,4);
 	
-	//Tab.DibujarTablero();
-	//cout << "dibuje";
+	Tab.DibujarTablero();
+	cout << "dibuje";
+	*/
+	bool Game_Over = false;
+	
+	while(!Game_Over)
+	{
+		Pi.MoverFicha();
+		Tab.PintarLimites();
+		Sleep(5);
+		Gr.Gotoxy(20,5);
+		cout<<"pos Y: "<<Pi.getY();
+		if(Pi.getY() == 15)
+		{
+			Pi.setY(2);
+		}
+	}
+	
 	
 	return 0;
 }

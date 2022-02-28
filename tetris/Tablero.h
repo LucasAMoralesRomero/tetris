@@ -23,6 +23,29 @@ public:
 		}
 		}
 		
+		void PintarLimites(){//re4pintar los limites del escenario
+			for(int i = 0; i < 20; i++)
+			{
+				//limite izquierda
+				Gotoxy(0,i); 
+				printf("%c",a);
+				
+				//limite derecha
+				Gotoxy(11,i); 
+				printf("%c",a);
+				
+			}
+			
+		}
+			void Gotoxy(int x, int y){//funcion que emula gotoxy de biblioteca borlandC
+				HANDLE hCon;
+				hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+				COORD xyPos;
+				xyPos.X = x;
+				xyPos.Y = y;
+				SetConsoleCursorPosition(hCon, xyPos);
+			}
+				
 	
 private:
 	char a = 219;
