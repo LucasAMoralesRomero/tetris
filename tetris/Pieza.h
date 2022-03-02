@@ -76,10 +76,10 @@ public:
 	
 	char MatrizPieza[4][4]//pieza de A x B
 	{
-	{o,a,o,o,},
-	{o,a,o,o,},
-	{o,a,o,o,},
-	{o,a,o,o,}
+	{o,o,o,o,},
+	{o,o,o,o,},
+	{o,o,o,o,},
+	{o,o,o,o,}
 	};		
 	
 	char matrizTemporal[4][4]//matriz temporal para hacer las rotaciones

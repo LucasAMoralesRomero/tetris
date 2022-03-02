@@ -9,6 +9,11 @@
 #include "Tablero.h"
 #include "Pieza.h"
 #include "L.h"
+#include "I.h"
+#include "O.h"
+#include "S.h"
+#include "Z.h"
+#include "T.h"
 
 class Game {
 public:
@@ -19,7 +24,7 @@ public:
 		Graphics Gr;
 		Tablero Tab;
 		Gr.OcultarCursor();
-		L Pi(2,2);
+		T Pi(2,2);
 		Tab.DibujarTablero();
 		Pi.DibujarPieza();
 		/*Gr.PintarLimites(); //por el momento no se implementara Graphics.PintarLimites(), se implementara en proxima version
