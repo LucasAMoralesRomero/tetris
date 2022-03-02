@@ -38,7 +38,7 @@ public:
 			if(tecla == IZQUIERDA && x>0) x--;
 			if(tecla == DERECHA && x<9) x++;
 			if(tecla == ABAJO && y<15) y++;
-			if(tecla == ARRIBA && y>0) y--;
+			if(tecla == ARRIBA && y>0) RotarPieza();
 			DibujarPieza();
 		}
 	}
@@ -81,8 +81,35 @@ public:
 	{o,a,o,o,},
 	{o,a,o,o,}
 	};		
+	
+	char matrizTemporal[4][4]//matriz temporal para hacer las rotaciones
+	{
+	{o,o,o,o,},
+	{o,o,o,o,},
+	{o,o,o,o,},
+	{o,o,o,o,}
+	};
+	
+	void RotarPieza(){
 		
-		
+	
+	
+	for(int a=0; a<4; a++)
+		{
+		for(int b=0; b<4; b++)
+			{
+			matrizTemporal[3-b][a]=MatrizPieza[a][b];
+			}
+		}
+	for(int c= 0; c<4; c++)
+	{
+		for(int d=0; d<4; d++)
+		{
+			MatrizPieza[c][d] = matrizTemporal[c][d];
+		}
+	}
+	
+	}
 private:
 		
 			int x;
