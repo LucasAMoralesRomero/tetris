@@ -7,12 +7,13 @@
 #include "Tablero.h"
 #include "Pieza.h"
 #include "L.h"
+#include "Game.h"
 
 
 using namespace std;
 
 int main (int argc, char *argv[]) {
-	Graphics Gr;
+	/*Graphics Gr;
 	Tablero Tab;
 	Gr.OcultarCursor();
 	L Pi(2,2);
@@ -29,7 +30,7 @@ int main (int argc, char *argv[]) {
 	
 	Tab.DibujarTablero();
 	cout << "dibuje";
-	*/
+	
 	bool Game_Over = false;
 	
 	while(!Game_Over)
@@ -44,8 +45,10 @@ int main (int argc, char *argv[]) {
 			Pi.setY(2);
 		}
 	}
+	*/
 	
-	
+	Game Juego;
+	Juego.StartGame();
 	return 0;
 }
 
