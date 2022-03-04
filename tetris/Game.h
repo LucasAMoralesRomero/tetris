@@ -52,6 +52,8 @@ public:
 			{
 				Pi.setY(2);
 			}
+			Gr.LimpiarPantallaInfo();
+			
 		}
 		
 		

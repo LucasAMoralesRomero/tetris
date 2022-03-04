@@ -10,6 +10,15 @@ public:
 	Graphics(){
 		
 	}
+	
+	void LimpiarPantallaInfo(){//funcion que limpia la pantalla en el lado de informacion
+		for (int a = 25; a<78; a++)
+		{
+			for(int b =0; b<33;b++)
+				Gotoxy(a,b);
+				printf("%c",32);//caracter 32 espacio vacio
+		}
+	}
 	void OcultarCursor(){
 		HANDLE hCon;
 		hCon = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -74,6 +83,7 @@ public:
 			printf("%c",202);
 			
 		}
+		
 		
 private:
 };
